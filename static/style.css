@@ -1,0 +1,14 @@
+html {
+    background-color: darkslategrey;
+}
+
+main {
+    border:#000000 2px solid;
+	background-color: dimgray;
+}
+
+footer {
+    padding: 0px;
+    border:#000000 2px solid;
+	background-color: dimgray;
+}
