@@ -4,6 +4,13 @@
         <link type="text/css" rel="stylesheet" href="../static/style.css">
     </head>
 
+    <nav>
+        {% block nav %}
+        <a href="/"> Home</a>
+        <a href="/database"> Database</a>
+        {% endblock %}
+    </nav>
+
     <main>
     {% block main %}
     {% endblock %}

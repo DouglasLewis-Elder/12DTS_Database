@@ -1,5 +1,12 @@
 html {
-    background-color: darkslategrey;
+    background-color: darkgray;
+}
+
+nav {
+    padding: 3px;
+    border:#000000 2px solid;
+	background-color: dimgray;
+    height: 25px;
 }
 
 main {
@@ -8,7 +15,7 @@ main {
 }
 
 footer {
-    padding: 0px;
+    padding: 2px;
     border:#000000 2px solid;
 	background-color: dimgray;
 }
