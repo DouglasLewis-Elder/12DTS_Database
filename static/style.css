@@ -19,3 +19,20 @@ footer {
     border:#000000 2px solid;
 	background-color: dimgray;
 }
+
+ table {
+     border: 2px solid black;
+     width: 100%;
+     border-collapse: collapse;
+ }
+
+ th, td {
+
+     border: 1px solid black;
+     padding: 5px;
+ }
+
+ th {
+     color: #000000;
+     background-color: black;
+ }
