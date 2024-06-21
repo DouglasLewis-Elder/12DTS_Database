@@ -6,7 +6,8 @@ nav {
     padding: 3px;
     border:#000000 2px solid;
 	background-color: dimgray;
-    height: 25px;
+    height: 35px;
+    display: flex
 }
 
 main {
@@ -36,3 +37,9 @@ footer {
      color: #000000;
      background-color: black;
  }
+
+ form {
+    position: relative;
+    display: flex;
+    margin-left: 50px;
+}
