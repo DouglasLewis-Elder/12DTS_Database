@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+    <title>GT3RS</title>
+    <h1> GT3 RS</h1>
+
+        <table>
+        <thead>
+            <tr>
+                <td>Generation</td>
+                <td>Engine</td>
+                <td>Start of production</td>
+                <td>Body Type</td>
+                <td>Seats</td>
+                <td>Doors</td>
+                <td>0-100km/h</td>
+                <td>Top Speed</td>
+                <td>PTW Ratio</td>
+                <td>PTT Ratio</td>
+                <td>Power</td>
+                <td>Power Per Litre</td>
+                <td>Engine Layout</td>
+                <td>Engine Displacement</td>
+                <td>Num of Cylinders</td>
+                <td>Engine Config</td>
+                <td>Cylinder Bore</td>
+                <td>Piston Stroke</td>
+                <td>Valves per Cylinder</td>
+                <td>Aspiration</td>
+                <td>Fuel Tank Capacity</td>
+                <td>Drive Wheel</td>
+                <td>Gearbox</td>
+                <td>Fuel Consumption</td>
+                <td>End of Production</td>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                    <td>{{ row[5] }}</td>
+                    <td>{{ row[6] }}</td>
+                    <td>{{ row[7] }}</td>
+                    <td>{{ row[8] }}</td>
+                    <td>{{ row[9] }}</td>
+                    <td>{{ row[10] }}</td>
+                    <td>{{ row[11] }}</td>
+                    <td>{{ row[12] }}</td>
+                    <td>{{ row[13] }}</td>
+                    <td>{{ row[14] }}</td>
+                    <td>{{ row[15] }}</td>
+                    <td>{{ row[16] }}</td>
+                    <td>{{ row[17] }}</td>
+                    <td>{{ row[18] }}</td>
+                    <td>{{ row[19] }}</td>
+                    <td>{{ row[20] }}</td>
+                    <td>{{ row[21] }}</td>
+                    <td>{{ row[22] }}</td>
+                    <td>{{ row[23] }}</td>
+                    <td>{{ row[24] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

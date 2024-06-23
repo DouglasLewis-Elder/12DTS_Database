@@ -6,14 +6,18 @@
 
     <nav>
         {% block nav %}
-        <a href="/"> Home</a>
-        <a href="/database"> Database</a>
+           <!-- <a href="/"> Home</a> -->
+          <!--  <a href="/database"> Database</a> -->
+           <!-- <a href="/gt3rs"> GT3 RS</a> -->
+            <a href="/database"><button type="submit"> To Database</button></a>
+            <a href="/gt3rs"><button type="submit"> GT3RS </button></a>
+
+            <form method="post" action="/search">
+                <input type="text" name="Search" id="searchbox">
+                <input type="submit" value="Search">
+            </form>
         {% endblock %}
 
-        <form method="post" action="/search">
-        <input type="text" name="Search" id="searchbox">
-        <input type="submit" value="Search">
-    </form>
 
     </nav>
 
