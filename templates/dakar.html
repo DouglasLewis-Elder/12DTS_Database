@@ -1,9 +1,11 @@
-{%  extends 'base.html' %}
-{% block main %}
-    <h1> Database</h1>
-    <title>Database</title>
+{% extends "base.html" %}
 
-    <table>
+
+{% block main %}
+    <title>Dakar</title>
+    <h1> Dakar </h1>
+
+        <table>
         <thead>
             <tr>
                 <td>Generation</td>
@@ -62,10 +64,8 @@
                     <td>{{ row[22] }}</td>
                     <td>{{ row[23] }}</td>
                     <td>{{ row[24] }}</td>
-
                 </tr>
             {% endfor %}
         </tbody>
     </table>
-
 {% endblock %}
