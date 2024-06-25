@@ -18,6 +18,9 @@ def create_connect(db_filename):
 def render_index_page():
     return render_template('index.html')
 
+@app.route('/gallery')
+def render_gallery_page():
+    return render_template('gallery.html')
 
 @app.route('/database')
 def render_database_page():
@@ -66,7 +69,7 @@ def render_gt3rs_page():
 @app.route('/dakar', methods=['GET', 'POST'])
 def render_dakar_page():
 
-    look_up = "%"+ "dakar" + "%"
+    look_up = "%" + "dakar" + "%"
 
     query = ("SELECT generation, engine, start_of_production, body_type, seats, doors, acceleration, maximum_speed, power_to_weight_ratio, weight_to_torque_ratio, power, power_per_litre, engine_layout, engine_displacement, number_of_cylinders, engine_configuration, cylinder_bore, piston_stroke, number_of_valves_per_cylinder, engine_aspiration,fuel_tank_capacity, drive_wheel, number_of_gears_and_type_of_gearbox, fuel_consumption_combined, end_of_production FROM porsche_9112 WHERE generation LIKE ? OR engine LIKE ? OR start_of_production LIKE ? OR body_type LIKE ? OR seats LIKE ?  OR doors LIKE ? OR acceleration LIKE ? OR maximum_speed LIKE ? OR power_to_weight_ratio LIKE ? OR weight_to_torque_ratio LIKE ? OR power LIKE ? OR power_per_litre LIKE ? OR engine_layout LIKE ? OR engine_displacement LIKE ? OR number_of_cylinders LIKE ? OR engine_configuration LIKE ? OR cylinder_bore LIKE ? OR piston_stroke LIKE ? OR number_of_valves_per_cylinder LIKE ? OR engine_aspiration LIKE ? OR fuel_tank_capacity LIKE ? OR drive_wheel LIKE ? OR number_of_gears_and_type_of_gearbox LIKE ? OR fuel_consumption_combined LIKE ? OR end_of_production LIKE ?")
     connection = create_connect(DATABASE)

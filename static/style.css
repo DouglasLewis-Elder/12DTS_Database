@@ -28,6 +28,13 @@ footer {
      padding: 8px;
  }
 
+ img {
+     padding: 4px;
+     border-radius: 48px;
+     width: 480px;
+     height: 420px;
+ }
+
  th, td {
 
      border: 2px solid #A15c38;
@@ -67,8 +74,21 @@ button {
   border-radius: 24px;
 }
 
+
+
 button:hover {
   background-color: #A15c38;
   color: white;
   border-radius: 12px;
+}
+
+.container {
+ display: grid;
+ align-items: center;
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px;
+}
+
+.text {
+  font-size: 50px;
 }
